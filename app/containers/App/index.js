@@ -20,11 +20,13 @@ import Footer from 'components/Footer';
 import GlobalStyle from '../../global-styles';
 
 const AppWrapper = styled.div`
-  max-width: calc(768px + 16px * 2);
-  margin: 0 auto;
+  //max-width: calc(768px + 16px * 2);
+  background-color: #272e38;
+  max-width: 100%;
+  color: #fff;
+  padding: 0 25px;
   display: flex;
   min-height: 100%;
-  padding: 0 16px;
   flex-direction: column;
 `;
 
