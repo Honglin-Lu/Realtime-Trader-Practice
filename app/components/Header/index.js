@@ -44,7 +44,7 @@ const Username = styled.span`
 
 function Header() {
   return (
-    <div className="aaaa">
+    <div>
       <NavBar>
         <Logo>
            <SiMarketo />&nbsp;Logo

@@ -1,6 +1,6 @@
 {
   "name": "Realtime-Trader-Practice",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "realtime trade based on websocket and rxjs",
   "engines": {
     "npm": ">=5",

@@ -18,15 +18,15 @@ import Header from 'components/Header';
 import Footer from 'components/Footer';
 
 import GlobalStyle from '../../global-styles';
+import { TradePage } from '../TradePage';
 
 const AppWrapper = styled.div`
   //max-width: calc(768px + 16px * 2);
   background-color: #272e38;
-  max-width: 100%;
   color: #fff;
   padding: 0 25px;
   display: flex;
-  min-height: 100%;
+  height: 100vh;
   flex-direction: column;
 `;
 
@@ -41,7 +41,8 @@ export default function App() {
       </Helmet>
       <Header />
       <Switch>
-        <Route exact path="/" component={HomePage} />
+        <Route exact path="/" component={TradePage} />
+        <Route exact path="/home" component={HomePage} />
         <Route path="/features" component={FeaturePage} />
         <Route path="" component={NotFoundPage} />
       </Switch>
