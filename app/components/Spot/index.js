@@ -10,6 +10,10 @@ import styled from 'styled-components';
 
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
+import Profit from '../Profit';
+import Buy from '../Buy';
+import Sell from '../Sell';
+
 
 const Box = styled.div`
   width: 350px;
@@ -22,11 +26,20 @@ const Box = styled.div`
   }
 `;
 const Main = styled.article`
-  width: 70%;
+  width: 100%;
   display: flex;
   flex-flow: column nowrap;
 `;
 const Title = styled.div`
+
+`;
+const Context = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
 
 `;
 const Chart = styled.div`
@@ -44,12 +57,13 @@ function Spot() {
       {/*<FormattedMessage {...messages.header} />*/}
       <Main>
         <Title>EUR/USD</Title>
-        <Chart>
-          fff
-
-        </Chart>
+        <Context>
+          <Sell></Sell>
+          <Profit></Profit>
+          <Buy></Buy>
+        </Context>
       </Main>
-      <Side>bbb</Side>
+      {/*<Side>bbb</Side>*/}
     </Box>
   );
 }
