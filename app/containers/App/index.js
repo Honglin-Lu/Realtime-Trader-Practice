@@ -30,6 +30,15 @@ const AppWrapper = styled.div`
   flex-direction: column;
 `;
 
+const ws = new WebSocket('ws://localhost:3333/');
+ws.onopen = function() {
+  console.log('WebSocket Client Connected');
+  ws.send('Hi this is web client.');
+};
+ws.onmessage = function(e) {
+  console.log("Received2222: '" + e.data + "'");
+};
+
 export default function App() {
   return (
     <AppWrapper>
